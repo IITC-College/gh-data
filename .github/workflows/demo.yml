@@ -48,6 +48,6 @@ jobs:
       - name: Output contents
         run: ls -la
       - name: Output JS Filename
-        run: echo "JS Filename: ${{ steps.build.outputs.script-file }}"
+        run: echo "JS Filename ${{ steps.build.outputs.script-file }}"
       - name: Deploy
         run: echo "Deploying..."
